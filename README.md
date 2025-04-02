@@ -1,0 +1,1 @@
+Aquest projecte consisteix en una senzilla calculadora de notes desenvolupada amb HTML, CSS i JavaScript. Permet introduir diferents qualificacions i els seus pesos corresponents per obtenir la nota mitjana.
