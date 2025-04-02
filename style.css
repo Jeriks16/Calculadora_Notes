@@ -1,0 +1,48 @@
+        button{
+            border-radius: 30px;
+            transition: 1s;
+        }
+        button:hover{
+            height: 100px;
+            width: 300px;
+            box-shadow: 0px 0px 100px  rgb(0, 0, 0);
+
+        }
+        
+        .spacer{
+            height: 50px;
+        }
+        h1{
+            color: blue;
+        }
+        #titul-cont{
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        button{
+            font-size: 25pt;
+        }
+        #part_2{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        
+           
+        }
+        .div2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }

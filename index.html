@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+    <script>
+        function iniciar(){
+            var a = document.getElementById("titul-cont");
+            a.style.display = "none";
+
+            var b = document.getElementById("part_2");
+            b.style.display = "flex";
+        }
+
+        function calcular(){
+            var a = document.getElementById("nota_q");
+            console.log(a.value);
+            const A = Number(a.value)
+
+            var b = document.getElementById("percentatge_q");
+            console.log(b.value);
+            const B = Number(b.value)
+
+            var c = document.getElementById("nota_e");
+            console.log(c.value);
+            const C = Number(c.value)
+
+            var d = document.getElementById("percentatge_e");
+            console.log(d.value);
+            const D = Number(d.value)
+
+            var nota = A * (B/100) + C * (D/100);
+
+            document.getElementById('nota_f').value = nota;
+
+        }
+
+    
+        
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="titul-cont">
+        <h1>Calculadora de notes</h1>
+        <button onclick="iniciar()" type="button">😶‍🌫️Clica😶‍🌫️</button>
+        <div class="spacer"> </div>
+    </div>
+    <div id="part_2">
+        <div class="div2">
+            <h3>nota quadern</h3>
+            <input id="nota_q" type="text" oninput="calcular()">
+            <h3>percentatge</h3>
+            <input id="percentatge_q" type="text" oninput="calcular()">
+        </div>
+        <div class="div2">
+            <h3>nota examen</h3>
+            <input id="nota_e" type="text" oninput="calcular()">
+            <h3>percentatge</h3>
+            <input id="percentatge_e" type="text" oninput="calcular()">
+        </div>
+        <div class="div2">
+            <h3>nota final</h3>
+            <input id="nota_f" type="text" oninput="calcular()">
+        </div>
+    </div>
+</body>
+</html>
